@@ -114,7 +114,6 @@ Project-02-Azure-Files-Migration/
 │   ├── 01-resource-group-created.png
 │   ├── 02-vnet-created.png
 │   ├── ...
-│   └── 35-monitoring-dashboard.png
 ├── Scripts/
 │   ├── 01-Setup-OnPremFileServer.ps1
 │   ├── 02-Create-AzureFiles-Infrastructure.ps1
@@ -149,19 +148,19 @@ Project-02-Azure-Files-Migration/
 ## 💰 Cost Estimate
 
 **Monthly Azure Costs (Production):**
-- Azure Files Premium (100 GiB): ~$13.60
+- Azure Files Premium (100 GiB): ~€13.60
 - Storage Sync Service: Free
-- Backup (100 GiB): ~$10.00
-- Data transfer (minimal): ~$2.00
-- **Total**: ~$25.60/month
+- Backup (100 GiB): ~€10.00
+- Data transfer (minimal): ~€2.00
+- **Total**: ~€25.60/month
 
 **vs. On-Premises:**
-- Hardware: $5,000 amortized = ~$140/month
-- Power/cooling: ~$50/month
-- Maintenance: ~$100/month
-- **Total**: ~$290/month
+- Hardware: ~€5,000 amortized = ~€140/month
+- Power/cooling: ~€50/month
+- Maintenance: ~€100/month
+- **Total**: ~€290/month
 
-**Savings**: ~$264/month (91% reduction)
+**Savings**: ~€264/month (91% reduction)
 
 ## 📈 Performance Metrics
 
@@ -252,4 +251,5 @@ Youssef CHENNOUFI
 ---
 
 **Last Updated**: October 2025  
+
 **Azure Services**: Files, File Sync, Backup, Storage  
