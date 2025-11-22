@@ -2,7 +2,7 @@
 
 Complete enterprise file server migration from on-premises to Azure Files with sync, backup, and lifecycle management.
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Migrate 2TB file server to Azure Files
 - Maintain user access with same drive mappings
@@ -11,7 +11,7 @@ Complete enterprise file server migration from on-premises to Azure Files with s
 - Secure storage with network isolation
 - Automate lifecycle management for cost optimization
 
-## 🏗️ Architecture
+## Architecture
 ```
 On-Premises Server (Simulated)                Azure Cloud
 ┌────────────────────────┐
@@ -34,7 +34,7 @@ On-Premises Server (Simulated)                Azure Cloud
                                         └─────────────────────────┘
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Azure Files Premium** - High-performance SMB file shares
 - **Azure File Sync** - Hybrid sync solution
@@ -43,7 +43,7 @@ On-Premises Server (Simulated)                Azure Cloud
 - **Storage Firewall** - Network security
 - **PowerShell** - Automation scripts
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Azure subscription
 - Azure PowerShell module
@@ -51,7 +51,7 @@ On-Premises Server (Simulated)                Azure Cloud
 - RDP client
 - Basic networking knowledge
 
-## 🚀 Deployment Steps
+## Deployment Steps
 
 ### Phase 1: On-Premises Setup
 1. Create Windows Server VM (simulated on-prem)
@@ -82,7 +82,7 @@ On-Premises Server (Simulated)                Azure Cloud
 1. Create policy to move files to Cool tier after 90 days
 2. Configure retention rules
 
-## 📊 Key Features Implemented
+## Key Features Implemented
 
 ### Cloud Tiering
 - **Policy**: Keep 80% volume free space
@@ -107,13 +107,14 @@ On-Premises Server (Simulated)                Azure Cloud
 - Auto-shutdown for test VMs
 - Monitoring alerts for unusual usage
 
-## 📁 Project Structure
+## Project Structure
 ```
 Project-02-Azure-Files-Migration/
 ├── Screenshots/
 │   ├── 01-resource-group-created.png
 │   ├── 02-vnet-created.png
 │   ├── ...
+│   └── 35-monitoring-dashboard.png
 ├── Scripts/
 │   ├── 01-Setup-OnPremFileServer.ps1
 │   ├── 02-Create-AzureFiles-Infrastructure.ps1
@@ -123,7 +124,7 @@ Project-02-Azure-Files-Migration/
 └── README.md
 ```
 
-## 🧪 Testing Performed
+## Testing Performed
 
 1. **Sync Testing**
    - Created test files on server
@@ -145,7 +146,7 @@ Project-02-Azure-Files-Migration/
    - Tested access from allowed networks
    - Confirmed blocked access from internet
 
-## 💰 Cost Estimate
+## Cost Estimate
 
 **Monthly Azure Costs (Production):**
 - Azure Files Premium (100 GiB): ~€13.60
@@ -155,14 +156,14 @@ Project-02-Azure-Files-Migration/
 - **Total**: ~€25.60/month
 
 **vs. On-Premises:**
-- Hardware: ~€5,000 amortized = ~€140/month
+- Hardware: €5,000 amortized = ~€140/month
 - Power/cooling: ~€50/month
 - Maintenance: ~€100/month
 - **Total**: ~€290/month
 
-**Savings**: ~€264/month (91% reduction)
+**Savings**: ~$264/month (91% reduction)
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 - **Sync Speed**: ~100 MB/min
 - **Latency**: < 20ms (within region)
@@ -170,7 +171,7 @@ Project-02-Azure-Files-Migration/
 - **IOPS**: Up to 4,000 (Premium)
 - **Backup Duration**: ~5 min for 2GB
 
-## 🎓 Skills Demonstrated
+## Skills Demonstrated
 
 - Azure Storage architecture
 - Hybrid cloud solutions
@@ -181,7 +182,7 @@ Project-02-Azure-Files-Migration/
 - Change management procedures
 - Documentation best practices
 
-## 🔄 Production Cutover
+## Production Cutover
 
 ### Preparation
 1. Final sync verification
@@ -201,7 +202,7 @@ Project-02-Azure-Files-Migration/
 - Files remain locally until tiering kicks in
 - Can revert drive mappings instantly
 
-## 🔍 Monitoring & Alerts
+## Monitoring & Alerts
 
 **Configured Alerts:**
 - Sync health degraded
@@ -215,14 +216,14 @@ Project-02-Azure-Files-Migration/
 - Sync errors
 - Backup success rate
 
-## 📚 Lessons Learned
+## Lessons Learned
 
 1. **Cloud Tiering**: Aggressive tiering policies require user education
 2. **Network**: VPN bandwidth impacts sync speed significantly
 3. **Backup**: Regular restore testing is critical
 4. **Permissions**: NTFS ACLs require careful planning for cloud
 
-## 🎯 Real-World Application
+## Real-World Application
 
 This project demonstrates skills needed for:
 - **Hybrid Cloud Migrations** - Every company moving to cloud needs this
@@ -230,7 +231,7 @@ This project demonstrates skills needed for:
 - **DR Strategy** - Cloud-based backup and recovery
 - **Cost Optimization** - Tiering and lifecycle management
 
-## 👔 Business Impact
+## Business Impact
 
 - **Eliminated** single point of failure (on-prem server)
 - **Reduced** costs by 91%
@@ -238,18 +239,17 @@ This project demonstrates skills needed for:
 - **Enabled** remote work (cloud access)
 - **Simplified** IT operations (no hardware maintenance)
 
-## 🔗 Additional Resources
+## Additional Resources
 
 - [Azure Files Documentation](https://docs.microsoft.com/azure/storage/files/)
 - [Azure File Sync Documentation](https://docs.microsoft.com/azure/storage/file-sync/)
 - [Azure Backup for Files](https://docs.microsoft.com/azure/backup/azure-file-share-backup-overview)
 
-## 👨‍💻 Author
+## Author
 
 Youssef CHENNOUFI
 
 ---
 
-**Last Updated**: October 2025  
-
+**Last Updated**: November 2025  
 **Azure Services**: Files, File Sync, Backup, Storage  
