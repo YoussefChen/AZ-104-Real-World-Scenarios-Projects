@@ -114,13 +114,12 @@ Project-02-Azure-Files-Migration/
 │   ├── 01-resource-group-created.png
 │   ├── 02-vnet-created.png
 │   ├── ...
-│   └── 35-monitoring-dashboard.png
+│   └── 23-files-in-azure-portal.png
 ├── Scripts/
-│   ├── 01-Setup-OnPremFileServer.ps1
-│   ├── 02-Create-AzureFiles-Infrastructure.ps1
-│   ├── 03-Test-FileSync.ps1
-│   ├── 04-Monitor-CloudTiering.ps1
-│   ├── 05-Verify-Backup.ps1
+│   ├── Create-AzureFiles-Infrastructure.ps1
+│   ├── Test-FileSync.ps1
+|   ├── ...
+│   ├── Verify-Backup.ps1
 └── README.md
 ```
 
@@ -253,3 +252,4 @@ Youssef CHENNOUFI
 
 **Last Updated**: November 2025  
 **Azure Services**: Files, File Sync, Backup, Storage  
+
