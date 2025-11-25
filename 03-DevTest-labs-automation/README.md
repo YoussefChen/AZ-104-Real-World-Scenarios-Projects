@@ -246,7 +246,7 @@ This solution is used by companies to:
 - Configurable retention (7 days default)
 
 
-## 📚 Lessons Learned
+## Lessons Learned
 
 ### What Worked Well:
 1. **Custom Images:** Saved developers hours of setup time
@@ -256,4 +256,5 @@ This solution is used by companies to:
 ### Challenges Overcome:
 1. **Managed Identity Setup:** Required proper RBAC roles
 2. **Runbook Scheduling:** Needed correct timezone configuration
+
 3. **Developer Adoption:** Required training and documentation
