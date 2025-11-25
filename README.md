@@ -1,6 +1,9 @@
-Azure Administrator Portfolio - Youssef CHENNOUFI
-Azure Administrator | Cloud Infrastructure Specialist | Automation Enthusiast
+                                        Azure Administrator Portfolio - Youssef CHENNOUFI
+                          Azure Administrator | Cloud Infrastructure Specialist | Automation Enthusiast
+
+                          
 This portfolio demonstrates production-ready Azure administration skills through three enterprise-grade projects, showcasing identity management, storage solutions, and cost optimization capabilities.
+
 
 Portfolio Overview
 Three complete Azure projects demonstrating end-to-end implementation skills from architecture design through deployment, automation, and cost optimization. Each project solves real business problems and includes full documentation, automation scripts, and cost analysis.
@@ -14,10 +17,10 @@ Problem Solved: Manual user provisioning takes 15-20 minutes per employee. Delay
 Solution: Serverless automation using Logic Apps and Azure Storage Tables that provisions new employees in 90 seconds and disables departing employees immediately.
 Key Results:
 
- Provisioning time: 15 minutes → 90 seconds (90% faster)
- Monthly savings: €225 in IT labor
- Security: Immediate account disabling (zero delay)
- Success rate: 100% automation accuracy
+   Provisioning time: 15 minutes → 90 seconds (90% faster)
+   Monthly savings: €225 in IT labor
+   Security: Immediate account disabling (zero delay)
+   Success rate: 100% automation accuracy
 
 Technologies: Microsoft Entra ID, Azure Logic Apps, Storage Tables, Office 365 Connectors
 Skills Demonstrated: Identity & Access Management, Low-Code Automation, Integration Architecture, Security Compliance
@@ -28,10 +31,10 @@ Problem Solved: On-premises file servers cost €290/month, require maintenance,
 Solution: Complete hybrid migration to Azure Files with sync, tiering, and automated backups while maintaining user experience.
 Key Results:
 
- Cost reduction: 91% (€290 → €26/month)
- Storage optimization: 75% local storage saved via tiering
- RTO: <15 minutes with automated backups
- Enabled remote work: Cloud-accessible file shares
+   Cost reduction: 91% (€290 → €26/month)
+   Storage optimization: 75% local storage saved via tiering
+   RTO: <15 minutes with automated backups
+   Enabled remote work: Cloud-accessible file shares
 
 Technologies: Azure Files Premium, Azure File Sync, Recovery Services Vault, Storage Firewall, Lifecycle Management
 Skills Demonstrated: Hybrid Cloud Architecture, Backup & DR Strategy, Network Security, Storage Optimization
@@ -42,10 +45,10 @@ Problem Solved: Developers wait 3 days for VMs. Forgotten VMs cost €3,000/mont
 Solution: Self-service DevTest Labs platform with auto-shutdown, custom images, and automated cleanup runbooks.
 Key Results:
 
- VM provisioning: 3 days → Instant (100% improvement)
- Cost reduction: 63% (€980 → €360/month)
- Zero forgotten VMs: Automatic 7-day deletion
- IT tickets: 50/month → 0 (self-service)
+   VM provisioning: 3 days → Instant (100% improvement)
+   Cost reduction: 63% (€980 → €360/month)
+   Zero forgotten VMs: Automatic 7-day deletion
+   IT tickets: 50/month → 0 (self-service)
 
 Technologies: Azure DevTest Labs, Azure Automation, PowerShell Runbooks, Managed Identity, Cost Management
 Skills Demonstrated: Infrastructure Governance, Cost Optimization, PowerShell Automation, DevOps Practices
