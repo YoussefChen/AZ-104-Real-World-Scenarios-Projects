@@ -9,30 +9,28 @@ Built a complete developer self-service platform that reduced VM provisioning ti
 ## Architecture
 
 Azure DevTest Labs
-├── Cost Controls
-│   ├── Monthly budget caps (€500/user)
-│   ├── Auto-shutdown (7 PM daily)
-│   ├── Auto-start (8 AM weekdays)
-│   └── Cost alerts (75%, 100%)
-│
-├── Governance Policies
-│   ├── Allowed VM sizes (B1s, B2s, B2ms only)
-│   ├── Max 3 VMs per user
-│   ├── Max 20 VMs per lab
-│   └── Expiration policies
-│
-├── Custom Images
-│   └── Windows Server 2022 + IIS + SQL Express
-│
-├── VM Pools
-│   ├── Dedicated VMs (user-owned)
-│   └── Claimable VMs (shared pool)
-│
-└── Automation
-    ├── Delete VMs older than 7 days
-    ├── Weekly cost reports
-    └── Budget monitoring
-```
+
+    1. Cost Controls
+        1.1 Monthly budget caps (500€/user)
+        1.2 Auto-shutdown (7 PM daily)
+        1.3 Auto-start (8 AM weekdays)
+        1.4 Cost alerts (75%, 100%)
+        
+    2. Governance Policies
+        2.1 Allowed VM sizes (B1s, B2s, B2ms only)
+        2.2 Max 3 VMs per user
+        2.3 Max 20 VMs per lab
+        2.4 Expiration policies
+        
+    3. Custom Images
+        3.1 Windows Server 2022 + IIS + SQL Express
+        
+    4. VM Pools 
+        4.1 Dedicated VMs (user-owned)
+        4.2 Claimable VMs (shared pool)
+
+    5. Automation
+        5.1 Delete VMs older than 7 days
 
 ## Business Problem Solved
 
@@ -258,3 +256,4 @@ This solution is used by companies to:
 2. **Runbook Scheduling:** Needed correct timezone configuration
 
 3. **Developer Adoption:** Required training and documentation
+
