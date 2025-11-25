@@ -82,6 +82,7 @@ Each project includes complete documentation, cost analysis, and production-read
 
 Repository Structure
 azure-administrator-portfolio/
+
 ├── Project-01-Identity-Automation/
 │   ├── Screenshots/
 │   ├── Scripts/
