@@ -1,6 +1,6 @@
 # Automated Employee Lifecycle Management System
 
-## 🎯 Project Overview
+## Project Overview
 
 This project automates the complete employee lifecycle management using Azure-native services. When HR adds a new employee record to an Azure Storage Table, the system automatically creates their Microsoft Entra ID account, assigns properties, and notifies their manager—all within 5 minutes. When an employee leaves, a separate workflow immediately disables their account and updates the status, ensuring zero security gaps.
 
@@ -16,7 +16,7 @@ This project automates the complete employee lifecycle management using Azure-na
 
 ---
 
-## 🏗️ Architecture & Components
+## Architecture & Components
 
 ### What Was Built
 
@@ -88,7 +88,7 @@ Storage Tables were chosen instead of SharePoint due to licensing constraints. T
 
 ---
 
-## 💼 Business Value & Use Cases
+## Business Value & Use Cases
 
 **When Companies Need This:**
 - Organizations onboarding 10+ employees per month
@@ -110,7 +110,7 @@ A retail company hires 30 seasonal workers for the holiday rush. On Friday after
 
 ---
 
-## 🔧 Technical Implementation Details
+## Technical Implementation Details
 
 ### Data Model
 
@@ -179,7 +179,7 @@ Active → Terminated (manual HR update) → [Offboarding Logic App] → Offboar
 
 ---
 
-## 📈 Results & Metrics
+## Results & Metrics
 
 **Development Metrics:**
 - **Total Development Time:** ~4 hours (including learning and troubleshooting)
@@ -213,7 +213,7 @@ Active → Terminated (manual HR update) → [Offboarding Logic App] → Offboar
 
 ---
 
-## 🎓 Skills Demonstrated
+## Skills Demonstrated
 
 **Azure Administration (AZ-104):**
 - Azure Logic Apps workflow design and implementation
@@ -245,7 +245,7 @@ Active → Terminated (manual HR update) → [Offboarding Logic App] → Offboar
 
 ---
 
-## 📚 Key Learnings
+## Key Learnings
 
 **1. Connector Selection Matters**
 Initially attempted to use Office 365 Users connector, which only provides READ operations (get profile, search users). The Microsoft Entra ID connector provides full user lifecycle management (create, update, delete). Always verify connector capabilities before starting implementation.
@@ -275,7 +275,7 @@ Used Storage Table test data approach:
 
 ---
 
-## 🔗 Related Azure Concepts
+## Related Azure Concepts
 
 **Azure Services Used:**
 - **Logic Apps (Consumption):** Serverless workflow automation, pay-per-execution pricing model
@@ -297,7 +297,7 @@ Used Storage Table test data approach:
 
 ---
 
-## 🚀 Production Enhancements (Future Improvements)
+## Production Enhancements (Future Improvements)
 
 **Not Implemented (Out of Scope for AZ-104):**
 
@@ -336,7 +336,7 @@ Used Storage Table test data approach:
 
 ---
 
-## 📊 Architecture Diagram
+## Architecture Diagram
 ┌─────────────────────────────────────────────────────────┐
 │                    HR Team                              │
 │         (Manages Storage Table Manually)                │
@@ -382,7 +382,7 @@ Used Storage Table test data approach:
 
 ---
 
-## 🛠️ Deployment Instructions
+## Deployment Instructions
 
 ### Prerequisites
 - Azure subscription with Owner or Contributor role
@@ -435,7 +435,7 @@ Used Storage Table test data approach:
 
 ---
 
-## 📖 References & Documentation
+## References & Documentation
 
 **Microsoft Learn Resources:**
 - [Azure Logic Apps Documentation](https://learn.microsoft.com/en-us/azure/logic-apps/)
@@ -444,10 +444,11 @@ Used Storage Table test data approach:
 - [Connectors for Azure Logic Apps](https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-logicapps-connectors)
 
 
-## 🎯 Conclusion
+## Conclusion
 
 This project demonstrates production-ready identity lifecycle automation using Azure-native services and low-code tools. The solution eliminates manual provisioning overhead, reduces human error, ensures immediate security response during offboarding, and provides complete audit trails for compliance. By using pre-built connectors instead of custom code, the implementation is maintainable by IT administrators without developer expertise.
 
 The architectural choice of separate onboarding and offboarding workflows follows the single-responsibility principle and enables independent scaling and maintenance. Using Azure Storage Tables as the HR data source demonstrates cost optimization and eliminates third-party dependencies, making this an ideal reference architecture for organizations seeking to automate identity management within Azure's ecosystem.
+
 
 This automation pattern can be extended to handle additional lifecycle events such as role changes, department transfers, temporary access grants, and scheduled account reviews, making it a foundation for comprehensive identity governance automation.
